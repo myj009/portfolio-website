@@ -13,7 +13,7 @@ const config: Config = {
         secondary: "#0F1630",
         tertiary: "#7F8DAC",
         hover: "#424B67",
-        highlight: "#181F38",
+        highlight: "#171F38",
       },
     },
   },

@@ -27,15 +27,15 @@ const NAV_LINKS = [
 
 const Header = () => {
   return (
-    <div className="fixed w-full h-[94px] leading-[80px] bg-secondary">
-      <div className="flex h-full px-32 items-center justify-between">
+    <div className="fixed z-10 w-full h-[94px] leading-[80px] bg-secondary">
+      <div className="flex h-full px-48 items-center justify-between">
         <div className="cursor-pointer">
           <h1 className="flex text-4xl">
             <span className="text-primary">M</span>ohammad{"\u00A0"}
             <span className="text-primary">J</span>agora
           </h1>
         </div>
-        <div className="flex space-x-3">
+        <div className="flex space-x-5">
           <div className="flex space-x-8">
             {NAV_LINKS.map((navLink) => (
               <a
