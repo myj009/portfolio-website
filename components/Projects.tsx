@@ -37,7 +37,7 @@ const Projects = () => {
     <div className="px-48 pt-24">
       <div className="">
         <SectionSubtitle subtitle="Projects" />
-        <h3 className="mt-3 mb-3 text-white text-xl">
+        <h3 className="mt-3 mb-3 text-white text-2xl">
           Checkout my most recent projects
         </h3>
       </div>
