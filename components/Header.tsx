@@ -51,7 +51,7 @@ const Header = () => {
           <div className="items-center py-2 w-[2px] bg-tertiary"></div>
           <div className="flex items-center space-x-3">
             <Link
-              href=""
+              href="https://github.com/myj009"
               target="_blank"
               className="cursor-pointer text-white hover:text-primary transform ease-in-out hover:-translate-y+1 hover:scale-150"
               rel="noreferrer"
@@ -59,7 +59,7 @@ const Header = () => {
               <RiGithubFill />
             </Link>
             <Link
-              href=""
+              href="https://twitter.com/myj0007"
               target="_blank"
               className="cursor-pointer text-white hover:text-primary transform ease-in-out hover:-translate-y+1 hover:scale-150"
               rel="noreferrer"
@@ -67,7 +67,7 @@ const Header = () => {
               <RiTwitterFill />
             </Link>
             <Link
-              href=""
+              href="https://www.linkedin.com/in/myj007"
               target="_blank"
               className="cursor-pointer text-white hover:text-primary transform ease-in-out hover:-translate-y+1 hover:scale-150"
               rel="noreferrer"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { use, useEffect, useRef } from "react";
 import SectionSubtitle from "./SectionSubtitle";
 import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 import leetcodeImg from "@/public/test.jpg";
@@ -34,14 +34,14 @@ const ProjectList: ProjectCardProps[] = [
 
 const Projects = () => {
   return (
-    <div className="px-48 pt-24">
+    <div className="px-48">
       <div className="">
         <SectionSubtitle subtitle="Projects" />
         <h3 className="mt-3 mb-3 text-white text-2xl">
           Checkout my most recent projects
         </h3>
       </div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-4">
         {ProjectList.map((project) => (
           <ProjectCard
             key={project.title}

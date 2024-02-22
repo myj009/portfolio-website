@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer>
-      <div className="px-48 py-8">
+      <div className="px-48 pb-5">
         <div>
           <div className={`${classes.footer__copyright}`}>
             <p>

@@ -12,7 +12,7 @@ const Hero = () => {
     <section className={` ${classes.hero} `}>
       {/* desktop / large screen view */}
       <div id="hero-section" className="flex">
-        <div className="pt-24 px-48 grid grid-cols-2 justify-between items-center">
+        <div className="px-48 grid grid-cols-2 justify-between items-center">
           <div>
             <div className={`${classes.hero__content}`}>
               <SectionSubtitle subtitle="Hello" />
