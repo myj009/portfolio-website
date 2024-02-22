@@ -11,7 +11,7 @@ const Chip = ({ name }: { name: AssetName }) => {
           <Image
             src={require(`@/public/logos/${logo}`)}
             alt={name}
-            className="h-8 w-8 border-[1px] border-tertiary p-1.5 rounded-lg hover:border-white cursor-pointer"
+            className="h-9 w-9 border-[1px] border-tertiary p-1.5 rounded-lg hover:border-white cursor-pointer"
             width={1}
             height={1}
           />

@@ -6,6 +6,8 @@ import React from "react";
 import { RiGithubFill } from "react-icons/ri";
 import { FiExternalLink } from "react-icons/fi";
 import { motion } from "framer-motion";
+import { AssetName } from "@/lib/assets";
+import Chip from "./Chip";
 
 export interface ProjectCardProps {
   title: string;
@@ -13,7 +15,7 @@ export interface ProjectCardProps {
   gitLink: string;
   link: string;
   image: StaticImageData;
-  tags: string[];
+  tags: AssetName[];
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -27,7 +29,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <motion.div
       whileHover={{ scale: 1.04 }}
-      className="bg-highlight p-4 flex flex-col justify-between rounded-lg card"
+      className="bg-highlight py-6 px-4 flex flex-col justify-between rounded-lg card"
     >
       <div className="">
         <div className="mb-2">
@@ -39,27 +41,22 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             />
           </Link>
         </div>
-        <div className="font-bold mb-1">Leetcode</div>
-        <div className="font-normal mb-5">{description}</div>
+        <div className="font-bold mb-2 text-xl text-primary">{title}</div>
+        <div className="flex space-x-2 mt-1">
+          {tags.map((tech) => (
+            <Chip key={tech} name={tech} />
+          ))}
+        </div>
+        <div className="font-normal mt-3 mb-5">{description}</div>
       </div>
       <div className="">
-        <div className="flex space-x-2 mb-3 text-primary">
+        <div className="flex space-x-2 text-primary">
           <Link href={link} target="_blank" rel="noreferrer">
-            <FiExternalLink className="h-8 w-8" />
+            <FiExternalLink className="h-9 w-9" />
           </Link>
           <Link href={gitLink} target="_blank" rel="noreferrer">
-            <RiGithubFill className="h-8 w-8" />
+            <RiGithubFill className="h-9 w-9" />
           </Link>
-        </div>
-        <div className="flex flex-wrap space-x-2">
-          {tags.map((tag) => (
-            <div
-              key={tag}
-              className="bg-hover text-white py-1 px-3 rounded-full"
-            >
-              {tag}
-            </div>
-          ))}
         </div>
       </div>
     </motion.div>

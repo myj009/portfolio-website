@@ -30,7 +30,7 @@ const ContactForm = () => {
       <input
         type="text"
         placeholder="Name"
-        className="bg-highlight text-white rounded-md p-3"
+        className="bg-highlight text-white rounded-lg p-3"
         {...register("name", { required: "Name is required", maxLength: 80 })}
       />
       {errors.name && (
@@ -39,7 +39,7 @@ const ContactForm = () => {
       <input
         type="email"
         placeholder="Email"
-        className="bg-highlight text-white rounded-md p-3"
+        className="bg-highlight text-white rounded-lg p-3"
         {...register("email", {
           required: "Email address is required",
           maxLength: 80,
@@ -52,7 +52,7 @@ const ContactForm = () => {
       )}
       <textarea
         placeholder="Message"
-        className="bg-highlight text-white rounded-md p-3 min-h-28"
+        className="bg-highlight text-white rounded-lg p-3 min-h-36"
         {...register("message", { required: "Message is required" })}
       ></textarea>
       {errors.message && (
@@ -60,7 +60,7 @@ const ContactForm = () => {
       )}
       <button
         type="submit"
-        className="flex items-center justify-center space-x-3 w-full rounded-md bg-[#2663EB] py-2 text-lg"
+        className="flex items-center justify-center space-x-3 w-full rounded-lg bg-[#2663EB] py-2 text-lg"
       >
         <p className="text-white">Send Message</p>
         <RiSendPlaneFill className="h-5 w-5" />

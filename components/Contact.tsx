@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className="px-48 grid grid-cols-2">
+    <div className="px-48 grid grid-cols-2" id="contact">
       <div className="flex flex-col space-y-5">
         <h3 className="text-3xl">Connect with me</h3>
         <div className="flex space-x-2 items-center">

@@ -66,7 +66,8 @@ export type AssetName =
   | "Ruvy"
   | "Postcss"
   | "Nextjs"
-  | "Postgres";
+  | "Postgres"
+  | "Stripe";
 
 const assets: Assets = {
   AWS: "aws.svg",
@@ -133,6 +134,7 @@ const assets: Assets = {
   Postcss: "postcss.svg",
   Nextjs: "nextjs.svg",
   Postgres: "postgresql.svg",
+  Stripe: "stripe.svg",
 };
 
 export function getAssets(name: AssetName) {
