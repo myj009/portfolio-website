@@ -4,6 +4,7 @@ import axios from "axios";
 import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { RiSendPlaneFill } from "react-icons/ri";
+import { toast } from "react-toastify";
 
 interface IFormInput {
   name: string;
@@ -18,11 +19,23 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<IFormInput>();
 
-  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+  const onSubmit: SubmitHandler<IFormInput> = async (data) => {
     console.log(data);
-    axios.post("/api/send", data).then((res) => {
+    try {
+      const res = await axios.post("/api/send", data);
       console.log(res);
-    });
+      if (res.status == 500) {
+        toast.error(
+          "Unexpected error. Kindly email me at mohammadjagora@gmail.com"
+        );
+      } else {
+        toast.success("Email sent");
+      }
+    } catch (e) {
+      toast.error(
+        "Unexpected error. Kindly email me at mohammadjagora@gmail.com"
+      );
+    }
   };
 
   return (
