@@ -28,10 +28,6 @@ const TimelineElement: React.FC<TimelineElementProps> = ({
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  useEffect(() => {
-    console.log("Element is in view: ", isInView);
-  }, [isInView]);
-
   return (
     <div className="" ref={ref}>
       <VerticalTimelineElement

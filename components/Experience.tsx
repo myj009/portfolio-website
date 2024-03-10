@@ -45,7 +45,7 @@ const Experience = () => {
           style={{ marginBottom: "20px" }}
         >
           <h3 className="vertical-timeline-element-title text-primary text-xl">
-            Software Engineer - L4
+            Software Engineer(SRE)
           </h3>
           <h4 className="vertical-timeline-element-subtitle text-md">
             Deliveroo
@@ -55,10 +55,53 @@ const Experience = () => {
               <Chip key={tech} name={tech} />
             ))}
           </div>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
+          <ul className="mt-2 flex flex-col space-y-2 mr-4">
+            <ExpPoints
+              text={
+                <li>
+                  Developed a comprehensive{" "}
+                  <strong className="text-primary">
+                    central maintenance mode workflow
+                  </strong>{" "}
+                  for Deliveroo, enabling seamless cessation of all orders
+                  across the product platform during major incidents. This
+                  proactive approach{" "}
+                  <strong className="text-primary">
+                    significantly mitigated potential losses
+                  </strong>{" "}
+                  by preventing further orders, ensuring operational stability
+                  and minimizing disruptions to service.
+                </li>
+              }
+            />
+            <ExpPoints
+              text={
+                <li>
+                  Led the development of an integrated process to monitor and
+                  analyze{" "}
+                  <strong className="text-primary">incident metrics</strong>{" "}
+                  across all products, enabling the identification of patterns
+                  and recurring issues for{" "}
+                  <strong className="text-primary">
+                    proactive incident prevention
+                  </strong>
+                  . Implemented a comprehensive dashboard for visualizing these
+                  metrics, facilitating data-driven decision-making.
+                </li>
+              }
+            />
+            <ExpPoints
+              text={
+                <li>
+                  Established a streamlined procedure for creating repair items
+                  as a backlog of incidents, aimed at identifying core issues
+                  and ensuring timely resolution by all teams. Leveraged
+                  dashboard tracking and automated notifications to enhance team
+                  responsiveness and efficiency in addressing incidents.
+                </li>
+              }
+            />
+          </ul>
         </TimelineElement>
         <TimelineElement
           className="vertical-timeline-element--work"
@@ -78,7 +121,7 @@ const Experience = () => {
               <Chip key={tech} name={tech} />
             ))}
           </div>
-          <ul className="mt-2 flex flex-col space-y-1 mr-4">
+          <ul className="mt-2 flex flex-col space-y-2 mr-4">
             <ExpPoints
               text={
                 <li>
@@ -136,7 +179,7 @@ const Experience = () => {
               <Chip key={tech} name={tech} />
             ))}
           </div>
-          <ul className="mt-2 flex flex-col space-y-1">
+          <ul className="mt-2 flex flex-col space-y-2">
             <ExpPoints
               text={
                 <li>

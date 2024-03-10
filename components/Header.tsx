@@ -57,7 +57,7 @@ const Header = () => {
                 key={navLink.path}
                 href={navLink.path}
                 target={navLink.openInNewPage ? "_blank" : "_self"}
-                className={`${console.log("Path: ", path, navLink.path)} ${
+                className={`${
                   path === navLink.path && "text-primary"
                 } text-base lg:text-lg text-tertiary hover:text-primary`}
               >
