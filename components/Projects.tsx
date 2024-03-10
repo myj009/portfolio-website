@@ -46,14 +46,14 @@ const ProjectList: ProjectCardProps[] = [
 
 const Projects = () => {
   return (
-    <div className="px-48" id="projects">
+    <div className="container" id="projects">
       <div className="">
         <SectionSubtitle subtitle="Projects" />
         <h3 className="mt-3 mb-3 text-white text-2xl">
           Checkout my most recent projects
         </h3>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
         {ProjectList.map((project) => (
           <ProjectCard
             key={project.title}

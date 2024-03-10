@@ -1,8 +1,7 @@
 .hero {
-  padding-top: 60px !important;
+  padding-top: 10px !important;
 }
 .hero__content h5 {
-  color: #808dad;
   font-weight: 400;
 }
 

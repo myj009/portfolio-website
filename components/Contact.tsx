@@ -1,15 +1,16 @@
 import React from "react";
 import Link from "next/link";
 import SectionSubtitle from "./SectionSubtitle";
-import axios from "axios";
-import { useState } from "react";
 import { RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 import { IoLocationOutline, IoMailOutline } from "react-icons/io5";
 import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <div className="px-48 grid grid-cols-2" id="contact">
+    <div
+      className="container grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-2"
+      id="contact"
+    >
       <div className="flex flex-col space-y-5">
         <h3 className="text-3xl">Connect with me</h3>
         <div className="flex space-x-2 items-center">

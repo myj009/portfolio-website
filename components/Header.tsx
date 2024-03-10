@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { IoMenu } from "react-icons/io5";
 import { RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
+import DrawerExample from "./Drawer";
+import Drawer from "./Drawer";
 
-const NAV_LINKS = [
+export const NAV_LINKS = [
   {
-    path: "",
+    path: "/#home",
     display: "Home",
     openInNewPage: false,
   },
@@ -31,17 +33,24 @@ const NAV_LINKS = [
 
 const Header = () => {
   const path = usePathname();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   return (
-    <div className="fixed z-10 w-full h-[94px] leading-[80px] bg-secondary">
-      <div className="flex h-full px-48 items-center justify-between">
+    <div className="fixed container px-2 md:px-4 z-10 h-[94px] leading-[80px] bg-secondary">
+      <div className="flex h-full w-full items-center justify-between space-x-6">
         <div className="cursor-pointer">
-          <h1 className="flex text-4xl">
+          <h1 className="flex text-3xl lg:text-4xl">
             <span className="text-primary">M</span>ohammad{"\u00A0"}
             <span className="text-primary">J</span>agora
           </h1>
         </div>
-        <div className="flex space-x-5">
+        <div className="flex justify-center items-center md:hidden">
+          <button onClick={() => setIsDrawerOpen(true)}>
+            <IoMenu className="h-7 w-7" />
+          </button>
+        </div>
+
+        <div className="hidden md:flex space-x-5">
           <div className="flex space-x-8">
             {NAV_LINKS.map((navLink) => (
               <Link
@@ -50,7 +59,7 @@ const Header = () => {
                 target={navLink.openInNewPage ? "_blank" : "_self"}
                 className={`${console.log("Path: ", path, navLink.path)} ${
                   path === navLink.path && "text-primary"
-                } text-lg text-tertiary hover:text-primary`}
+                } text-base lg:text-lg text-tertiary hover:text-primary`}
               >
                 {navLink.display}
               </Link>
@@ -85,6 +94,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Drawer isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} />
     </div>
   );
 };

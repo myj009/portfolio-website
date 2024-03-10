@@ -32,7 +32,7 @@ const ExpPoints = ({ text }: { text: ReactNode }) => {
 
 const Experience = () => {
   return (
-    <div className="flex flex-col space-y-10 px-48" id="experience">
+    <div className="flex flex-col space-y-10 container" id="experience">
       <SectionSubtitle subtitle="Experience" />
       <VerticalTimeline layout="1-column-left">
         <TimelineElement
