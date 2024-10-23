@@ -1,9 +1,8 @@
-import React from "react";
 import Link from "next/link";
-import SectionSubtitle from "./SectionSubtitle";
-import { RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
 import { IoLocationOutline, IoMailOutline } from "react-icons/io5";
+import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
 import ContactForm from "./ContactForm";
+import SectionSubtitle from "./SectionSubtitle";
 
 const Contact = () => {
   return (

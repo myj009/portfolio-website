@@ -15,6 +15,7 @@ export interface ProjectCardProps {
   gitLink: string;
   link: string;
   image: StaticImageData;
+  video?: string;
   tags: AssetName[];
 }
 
@@ -24,6 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
   gitLink,
   image,
+  video,
   tags,
 }) => {
   return (
@@ -34,11 +36,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="">
         <div className="mb-2">
           <Link href={link} target="_blank" rel="noreferrer">
-            <Image
-              src={image}
-              alt={title}
-              className="rounded-lg w-full h-[300px]"
-            />
+            {video ? (
+              // <div className="text-lg">video</div>
+              <video
+                src={video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="pointer-events-none mx-auto h-80 rounded-lg w-full object-cover object-top" // needed because random black line at bottom of video
+              />
+            ) : (
+              <Image
+                src={image}
+                alt={title}
+                className="rounded-lg w-full h-80"
+              />
+            )}
+            {/* <div className="text-lg">video</div> */}
           </Link>
         </div>
         <div className="font-bold mb-2 text-xl text-primary">{title}</div>

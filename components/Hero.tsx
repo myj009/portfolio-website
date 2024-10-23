@@ -1,13 +1,11 @@
-import React, { Suspense } from "react";
-import Link from "next/link";
-import SectionSubtitle from "./SectionSubtitle";
-import { BsDiscord } from "react-icons/bs";
-import Image from "next/image";
-import heroImg from "@/public/mj.png";
+import heroImg from "@/public/mj_crop.png";
 import classes from "@/styles/hero.module.css";
 import classNames from "@/styles/subtitle.module.css";
-import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
+import Image from "next/image";
+import Link from "next/link";
 import { FaDownload } from "react-icons/fa6";
+import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
+import SectionSubtitle from "./SectionSubtitle";
 
 const Hero = () => {
   return (
@@ -90,8 +88,8 @@ const Hero = () => {
                 alt="Profile image"
                 src={heroImg}
                 className="rounded-full"
-                width="400"
-                height="400"
+                width="350"
+                height="350"
               />
             </div>
           </div>

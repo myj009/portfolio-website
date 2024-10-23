@@ -1,9 +1,9 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
 import { NAV_LINKS } from "./Header";
-import { usePathname } from "next/navigation";
 
 interface DrawerProps {
   isDrawerOpen: boolean;

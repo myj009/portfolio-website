@@ -1,8 +1,7 @@
 "use client";
 
 import axios from "axios";
-import React from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { toast } from "react-toastify";
 

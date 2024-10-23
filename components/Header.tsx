@@ -2,10 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
-import { RiGithubFill, RiTwitterFill, RiLinkedinFill } from "react-icons/ri";
-import DrawerExample from "./Drawer";
+import { RiGithubFill, RiLinkedinFill, RiTwitterFill } from "react-icons/ri";
 import Drawer from "./Drawer";
 
 export const NAV_LINKS = [

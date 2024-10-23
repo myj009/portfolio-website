@@ -67,6 +67,9 @@ export type AssetName =
   | "Postcss"
   | "Nextjs"
   | "Postgres"
+  | "Clerk"
+  | "SocketIO"
+  | "NextAuth"
   | "Stripe";
 
 const assets: Assets = {
@@ -134,6 +137,9 @@ const assets: Assets = {
   Postcss: "postcss.svg",
   Nextjs: "nextjs.svg",
   Postgres: "postgresql.svg",
+  Clerk: "clerk.png",
+  SocketIO: "socketio.svg",
+  NextAuth: "nextauth.png",
   Stripe: "stripe.svg",
 };
 

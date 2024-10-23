@@ -1,17 +1,16 @@
 "use client";
 
-import React, { ReactNode } from "react";
-import SectionSubtitle from "./SectionSubtitle";
+import { AssetName } from "@/lib/assets";
+import { ReactNode } from "react";
+import { GoStarFill } from "react-icons/go";
+import { SiAdobe, SiDeliveroo, SiHsbc } from "react-icons/si";
 import {
-  VerticalTimeline,
-  VerticalTimelineElement,
+  VerticalTimeline
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { SiAdobe, SiDeliveroo, SiHsbc } from "react-icons/si";
-import { GoStarFill } from "react-icons/go";
-import TimelineElement from "./TimelineElement";
 import Chip from "./Chip";
-import { AssetName } from "@/lib/assets";
+import SectionSubtitle from "./SectionSubtitle";
+import TimelineElement from "./TimelineElement";
 
 const technologies: {
   [key: string]: AssetName[];

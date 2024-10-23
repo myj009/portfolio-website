@@ -1,6 +1,5 @@
 import { AssetName, getAssets } from "@/lib/assets";
 import Image from "next/image";
-import React from "react";
 
 const Chip = ({ name }: { name: AssetName }) => {
   const logo = getAssets(name);
