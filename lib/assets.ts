@@ -70,6 +70,7 @@ export type AssetName =
   | "Clerk"
   | "SocketIO"
   | "NextAuth"
+  | "OpenAI"
   | "Stripe";
 
 const assets: Assets = {
@@ -140,6 +141,7 @@ const assets: Assets = {
   Clerk: "clerk.png",
   SocketIO: "socketio.svg",
   NextAuth: "nextauth.png",
+  OpenAI: "openai.svg",
   Stripe: "stripe.svg",
 };
 

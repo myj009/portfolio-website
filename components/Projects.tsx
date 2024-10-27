@@ -2,6 +2,7 @@ import ecomDashboardImg from "@/public/ecommerce-dashboard.png";
 import ecomStoreImg from "@/public/ecommerce-store.png";
 import leetcodeImg from "@/public/leetcode-light.png";
 import socketChatImg from "@/public/socket-chat.png";
+import askAiImg from "@/public/askai.png";
 import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 import SectionSubtitle from "./SectionSubtitle";
 
@@ -43,6 +44,17 @@ const ProjectList: ProjectCardProps[] = [
     ],
     video:
       "https://github.com/user-attachments/assets/d00e1407-673c-42bf-9b08-dda3056809ac",
+  },
+  {
+    title: "AskAI",
+    description:
+      "Power Your Business With AskAI. Unleash your Creativity with AI: Chat, Create, and Transform Instantly. All-in-One AI Tools to Elevate Your Imagination Seamlessly.",
+    gitLink: "https://github.com/myj009/askai",
+    link: "https://askai-kappa.vercel.app/",
+    image: askAiImg,
+    tags: ["TypeScript", "Nextjs", "OpenAI", "Tailwind"],
+    video:
+      "https://github.com/user-attachments/assets/e7a20075-b4bf-4a36-9a76-7d3e58074b1c",
   },
   {
     title: "Ecommerce Admin Dashboard",
