@@ -48,13 +48,13 @@ const Hero = () => {
               </h5>
               <p className="text-white mb-2" id="about-me">
                 Hi there! I&apos;m Mohammad Jagora, a full-stack software
-                engineer with 4+ years of experience. I&apos;m passionate about
+                engineer with 5+ years of experience. I&apos;m passionate about
                 technology, with a proven track record at companies like Adobe,
                 HSBC, and Deliveroo.
               </p>
               <p className="text-white">
                 My expertise lies in C++, TypeScript, Go, web development
-                (React.js, Next.js), microservices, and DevOps.
+                (React.js, Next.js), microservices, and distributed systems.
               </p>
               <div className="mt-5 flex place-content-center md:block">
                 <div className="relative inline-flex group">
@@ -122,13 +122,13 @@ const Hero = () => {
                 <h5 className="mb-4">Fullstack Developer</h5>
                 <p id="about-me" className="text-center">
                   Hi there! I&apos;m Mohammad Jagora, a full-stack software
-                  engineer with 4+ years of experience. I&apos;m passionate
+                  engineer with 5+ years of experience. I&apos;m passionate
                   about technology, with a proven track record at companies like
                   Adobe, HSBC, and Deliveroo.
                 </p>
                 <p className="text-center">
                   My expertise lies in C++, TypeScript, Go, web development
-                  (React.js, Next.js), microservices, and DevOps.
+                  (React.js, Next.js), microservices, and distributed systems.
                 </p>
               </div>
             </div>

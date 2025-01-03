@@ -4,9 +4,7 @@ import { AssetName } from "@/lib/assets";
 import { ReactNode } from "react";
 import { GoStarFill } from "react-icons/go";
 import { SiAdobe, SiDeliveroo, SiHsbc } from "react-icons/si";
-import {
-  VerticalTimeline
-} from "react-vertical-timeline-component";
+import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Chip from "./Chip";
 import SectionSubtitle from "./SectionSubtitle";
@@ -44,7 +42,7 @@ const Experience = () => {
           style={{ marginBottom: "20px" }}
         >
           <h3 className="vertical-timeline-element-title text-primary text-xl">
-            Software Engineer(SRE)
+            Software Engineer - Platform Tooling and Comms
           </h3>
           <h4 className="vertical-timeline-element-subtitle text-md">
             Deliveroo
@@ -58,6 +56,17 @@ const Experience = () => {
             <ExpPoints
               text={
                 <li>
+                  Architected a messaging service to send push notifications to
+                  Android and iOS devices utilizing Serverless Lambda
+                  architecture to handle spikes in traﬃc upto{" "}
+                  <strong className="text-primary">200k request/minute</strong>,
+                  enabling eﬃcient push notification delivery.
+                </li>
+              }
+            />
+            <ExpPoints
+              text={
+                <li>
                   Developed a comprehensive{" "}
                   <strong className="text-primary">
                     central maintenance mode workflow
@@ -66,7 +75,7 @@ const Experience = () => {
                   across the product platform during major incidents. This
                   proactive approach{" "}
                   <strong className="text-primary">
-                    significantly mitigated potential losses
+                    significantly mitigated potential losses by 30%
                   </strong>{" "}
                   by preventing further orders, ensuring operational stability
                   and minimizing disruptions to service.
@@ -94,9 +103,14 @@ const Experience = () => {
                 <li>
                   Established a streamlined procedure for creating repair items
                   as a backlog of incidents, aimed at identifying core issues
-                  and ensuring timely resolution by all teams. Leveraged
-                  dashboard tracking and automated notifications to enhance team
-                  responsiveness and efficiency in addressing incidents.
+                  that caused the failures and ensuring timely resolution by all
+                  teams. Leveraged dashboard tracking and automated
+                  notifications to enhance team responsiveness and efficiency in
+                  addressing incidents leading to{" "}
+                  <strong className="text-primary">
+                    50% increasing is resolution of tickets
+                  </strong>{" "}
+                  that caused the incidents
                 </li>
               }
             />
